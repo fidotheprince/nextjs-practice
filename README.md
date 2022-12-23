@@ -10,12 +10,15 @@
     * Notes on file structure for the framework
         *  files in _public_ dir render to user
             * files in _styles_ dir are global css
-                * Syntax for direct import of css
-                    * > Home.module.css
+                * Naming conventions of styles
+                    * File > Home.module.css
+                    * Component > Home.js
                 * 1 style sheet per component
                     * similair file names 
-    * Naming Convention between route files and components
+    * Naming convention between route files and components
         * File > aboutpage.js
         * Component > Layout.js
+    
+
         
     
