@@ -1,0 +1,12 @@
+.nav {
+    background-color: orangered;
+    color: black;
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

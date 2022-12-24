@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import Layout from './Layout'
-//import navStyles from '../styles/Nav.module.css'
+import navStyles from '../styles/Nav.module.css'
 
 /**
  * We want nav bar to be in the Layout.js component
@@ -9,8 +8,8 @@ import Layout from './Layout'
 
 const Nav = () => {
     return (
-        <nav>
-            <ul>
+        <nav className={navStyles.nav}>
+            <ul className={navStyles.ul}>
                 <li>
                     <Link href='/'>Home</Link>
                 </li>
