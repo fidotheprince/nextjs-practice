@@ -1,4 +1,5 @@
 import styles from '../styles/Layout.module.css'
+import Nav from './Nav'
 
 /** 
  * Component is self titled and is the application
@@ -8,9 +9,13 @@ import styles from '../styles/Layout.module.css'
 
 const Layout = ({children}) => {
     return (
-        <div className={styles.container}>
-            <main className={styles.main}>{children}</main>
-        </div>
+        <>
+            <Nav />
+            <div className={styles.container}>
+                <main className={styles.main}>{children}</main>
+            </div>
+        </>
+        
     )
 }
 

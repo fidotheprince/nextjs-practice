@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import navStyles from '../styles/Nav.module.css'
+import Layout from './Layout'
+//import navStyles from '../styles/Nav.module.css'
 
 /**
  * We want nav bar to be in the Layout.js component
@@ -20,3 +21,5 @@ const Nav = () => {
         </nav>
     )
 }
+
+export default Nav;
