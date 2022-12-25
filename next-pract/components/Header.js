@@ -3,6 +3,14 @@ import headerStyles from '../styles/Header.module.css'
 
 export const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+        <h1 className="title">
+            <span> WebDev </span> News
+        </h1>
+        {/* example of embedded styling */}
+        {/* <style jsx>{`.title {color: red;}`}</style> */}
+    </div>
   )
 }
+
+export default Header;
