@@ -19,7 +19,8 @@ NEXT JS fundamentals notes:
         * File > aboutpage.js
         * Component > Layout.js
 * Export a static website via this command in package.json
-    `"build": "next build && next report",`    
+    * `"build": "next build && next report",` 
+    * How to : [Link text](https://www.youtube.com/watch?v=mTz0GXj8NN0&t=2987s)   
     
 
         
