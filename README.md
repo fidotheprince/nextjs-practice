@@ -1,4 +1,4 @@
-# NEXT JS fundamentals notes: 
+NEXT JS fundamentals notes: 
     * What is NEXT JS
         * _Frontend Framework_ for Server Side Renderning
             * First page load is renedered on the server
@@ -18,6 +18,8 @@
     * Naming convention between route files and components
         * File > aboutpage.js
         * Component > Layout.js
+* Export a static website via this command in package.json
+    `"build": "next build && next report",`    
     
 
         
