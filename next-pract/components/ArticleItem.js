@@ -2,7 +2,7 @@ import articleStyles from '../styles/Article.module.css'
 import Link from 'next/link'
 
 export default function ArticleItem({article}) {
-    console.log(article)
+    
   return (
     /*Demonstrates how to dynamically set a endpoint*/
     <Link href="/article/[id]" as={`/article/${article.id}`}>
