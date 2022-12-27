@@ -13,7 +13,12 @@ export default function Home({articles}) {
 /* Example of request to our backend API */
 
 export const getStaticProps = async () => {
-  const res = await fetch('http://localhost:3000/api/articles')
+
+  /**
+   * Important to note that only absolute URLS are included
+   */
+  
+  const res = await fetch(process.env.DEVPATH + 'api/articles')
   const articles = await res.json();
   /**
    * expose fetch data to component via

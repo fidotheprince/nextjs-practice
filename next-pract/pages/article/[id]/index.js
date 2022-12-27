@@ -17,7 +17,8 @@ export default function article({ article }) {
 
 //enables you to fetch paths
 export const getStaticProps = async (context) => {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
+    
+    const res = await fetch(process.env.DEVPATH + 'api/articles/' + context.params.id)
     const article = await res.json()
     return {
         props: { article }
@@ -26,7 +27,7 @@ export const getStaticProps = async (context) => {
 
 //generates all possible paths;
 export const getStaticPaths = async () => {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/`)
+    const res = await fetch(process.env.DEVPATH + 'api/articles')
     const articles = await res.json()
     //return array of ids;
     const ids = articles.map(article => article.id)

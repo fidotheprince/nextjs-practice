@@ -33,6 +33,7 @@ NEXT JS fundamentals notes:
                 res.status(200).json(articles);
             }
         ```  
+* Important to note to use .env file to idenfity what environemt you're application is on
 
     
 
