@@ -1,12 +1,15 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Meta from '../../../components/Meta'
 
 export default function article({ article }) {
     // const router = useRouter()
     // const { id } = router.query;
     // console.log(id);
+    console.log(article)
   return (
     <>
+        <Meta title={article.title} />
         <h1>{article.title}</h1>
         <p>{article.body}</p>
         <br />
